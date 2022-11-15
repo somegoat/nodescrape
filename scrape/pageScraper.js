@@ -27,7 +27,6 @@ const scraperObject = {
 
 				results.push({text: item.innerText});
 				i += 1;
-				//let innerItems = document.querySelectorAll('span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1');
 				
 				
 			});
