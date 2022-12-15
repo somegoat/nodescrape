@@ -9,6 +9,7 @@ const scraperObject = {
 		console.log('Lots of data. This can and should take a while. Grab a coffee or something..')
 		await page.goto(this.url,{
 			waitUntil: 'networkidle0',
+			timeout: 0,
 		  });;
 		
 		let xyz = await page.evaluate(async () => {
