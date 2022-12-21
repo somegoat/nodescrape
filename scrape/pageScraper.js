@@ -14,13 +14,12 @@ const scraperObject = {
 		
 		let xyz = await page.evaluate(async () => {
 			let results = [];
-			
-			let items = document.querySelectorAll('div div.item-description');
-			// #root > div > div.market-container > div.items-container > div.items-wrapper > div:nth-child(1) > div > div.item-description
-			// #root > div > div.market-container > div.items-container > div.items-wrapper > div:nth-child(3)
 			const delay = async ms => new Promise(res => setTimeout(res, ms));
 			let i = 0;
 			await delay(15000);
+			let items = document.querySelectorAll('div div.item-description');
+			
+			
 			items.forEach((item) => {
 				
 				
